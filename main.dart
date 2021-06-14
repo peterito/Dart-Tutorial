@@ -16,6 +16,12 @@ String prompt(String promptText){
   return answer;
 }
 
+double promptDouble(){
+  print("Enter a number: ");
+  double myNum = double.parse(stdin.readLineSync());
+  return myNum;
+}
+
 void main() {
   /*print("Enter a color: ");
   String color = stdin.readLineSync();
@@ -50,6 +56,34 @@ greeting("peter", 31);
 
 String color = prompt("Enter a Color: ");
 String pluralNoun = prompt("Enter a plural Noun: ");
-String celebrity = prompt("Enter a celebrity: ");*/
+String celebrity = prompt("Enter a celebrity: ");
+
+//if statement
+bool isSmart = true;
+bool isStudent = true;
+
+if(isSmart && isStudent){
+ print("You are a smart student");
+}*/
+
+//loop
+int i = 1;
+while(i < 5){
+  print(i);
+  i++;
+}
+
+//String answer = "peter oyebamiji";
+//String guessName = "";
+//int guessCount = 0;
+
+ //while(guessName != answer){
+  //guessName = prompt("Enter your guess name: ");
+  //guessCount++;
+ //}
+
+ //print("you won in ${guessCount} time guesses");
+
+
 
 }
